@@ -1,10 +1,16 @@
-﻿namespace CoreFinance.Tests;
+﻿using CoreFinance.DataBrokers;
+using Xunit;
 
-public class UnitTest1
+namespace CoreFinance.Tests.DataBrokers;
+
+public class YFinanceTests
 {
     [Fact]
-    public void Test1()
+    public async Task RetrieveMSFT()
     {
-
+        var yFinance = new YFinance("MSFT");
+        var history = await yFinance.GetHistoryAsync(30);
+        Assert.NotNull(history);
+        Assert.NotEmpty(history);   
     }
 }
