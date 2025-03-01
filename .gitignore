@@ -1,0 +1,43 @@
+# Ignore build output
+**/bin/
+**/obj/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore environment variables
+.env
+
+# Ignore logs
+*.log
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sln.iml
+
+# Ignore Rider IDE files
+.idea/
+
+# Ignore node_modules directory (if using Node.js)
+node_modules/
+
+# Ignore publish output
+publish/
+
+# Ignore Visual Studio Code workspace settings file
+.vscode/settings.json
